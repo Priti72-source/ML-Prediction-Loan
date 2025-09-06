@@ -21,6 +21,22 @@ df = pd.read_csv('data/loan_data.csv')
 #handle missing values
 df.fillna(df.mode().iloc[0], inplace=True)
 
+import matplotlib.pyplot as plt
+import seaborn as sns
+sns.countplot(x="loan_status", data=df, palette="Set2")
+plt.title("Loan Status Distribution")
+plt.savefig('plot/Loan Status.png')
+plt.show()
+
+sns.scatterplot(x="person_income", y="loan_amnt", hue="loan_status", data=df, palette="Set1")
+plt.title("Applicant Income vs Loan Amount")
+plt.savefig('plot/Income vs Loan Amount.png')
+plt.show()
+
+sns.countplot(x="person_education", hue="loan_status", data=df, palette="coolwarm")
+plt.title("Loan Status by Education")
+plt.savefig('plot/Education vs Loan Status.png')
+plt.show()
 #Label Encoding
 from sklearn.preprocessing import LabelEncoder  
 label_encoders = {}
