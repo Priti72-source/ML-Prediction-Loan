@@ -1,4 +1,5 @@
 🚀 Loan Default Prediction – Logistic Regression Capstone Project
+
 📌 Project Overview
 
 This project aims to predict loan default risk using Logistic Regression.
@@ -6,15 +7,15 @@ The model helps financial institutions assess whether a loan applicant is likely
 
 The workflow covers the end-to-end ML lifecycle:
 
-Data preprocessing (handling missing values, encoding categorical variables, balancing with SMOTE)
+> Data preprocessing (handling missing values, encoding categorical variables, balancing with SMOTE)
 
-Model training & evaluation
+> Model training & evaluation
 
-Saving model and scaler as pickle files
+> Saving model and scaler as pickle files
 
-Deployment via Flask API
+> Deployment via Flask API
 
-Containerization with Docker
+> Containerization with Docker
 
 🗂️ Dataset
 
@@ -137,7 +138,8 @@ Logistic Regression is linear → may miss non-linear patterns
 
 ## 📊 Architecture
 
-![Loan Prediction Architecture](loan_prediction_architecture.png)
+<img width="2385" height="1516" alt="loan_prediction_architecture" src="https://github.com/user-attachments/assets/6a83fd1e-1052-4528-8277-d13d4d667e98" />
+
 
 
 🔮 Future Improvements
